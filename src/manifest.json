@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "earlsh - Chrome plugin",
+	"version": "0.1",
+	"icons": {
+		"128": "images/scissor_icon_128.png"
+	},
+
+	"browser_action": {
+		"default_title": "Create a shorturl",
+		"default_icon": "images/scissor_icon_128.png",
+		"default_popup": "popup.html"
+	},
+
+	"permissions": ["activeTab"]
+}
