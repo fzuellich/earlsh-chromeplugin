@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>earlsh - Options</title>
+	<style>
+		body: { padding: 10px; }
+
+		.form-field {
+			padding: 4px 0;
+		}
+
+		.form-field label {
+			display: inline-block;
+			font-weight: bold;
+			width: 100px;
+		}
+
+		.form-field input {
+			width: 70%;
+		}
+
+		.form-field .description {
+			color: #555;
+			display: inline-block;
+			line-height: 1.5;
+			margin-left: 104px;
+			margin-top: 2px;
+		}
+
+		#status {
+			display: inline;
+		}
+	</style>
+</head>
+
+<body>
+
+	<form method="#" action="#" id="options-form">
+		<div class="form-field">
+			<label>API-Key:</label>
+			<input type="text" id="apikey" required autofocus />
+		</div>
+
+		<div class="form-field">
+			<label>API-Endpoint:</label>
+			<input type="url" id="endpoint" required />
+			<p class="description">Base url of the API's installation. Example: <em>http://earlsh.example.com/api</em>.</p>
+		</div>
+
+		<button id="save">Save</button>
+		<div id="status"></div>
+	</form>
+	<script src="options.js"></script>
+
+</body>
+</html>

@@ -1,5 +1,7 @@
 {
 	"manifest_version": 2,
+	"permissions": ["activeTab", "storage"],
+
 	"name": "earlsh - Chrome plugin",
 	"version": "0.1",
 	"icons": {
@@ -12,5 +14,8 @@
 		"default_popup": "popup.html"
 	},
 
-	"permissions": ["activeTab"]
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	}
 }
