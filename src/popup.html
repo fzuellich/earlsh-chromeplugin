@@ -2,10 +2,51 @@
 <html>
 <head>
 	<title>Shorturl</title>
+	<style type="text/css">
+		body {
+			width: 200px;
+		}
+
+		section {
+			display: none
+		}
+
+		#loading img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		#loading #loading-status {
+			font-size: 10px;
+			text-align: center;
+		}
+
+		#shorturl-result {
+			width: 100%;
+		}
+
+		pre#error-message {
+			white-space: pre-line;
+		}
+	</style>
 </head>
 <body>
-	<p>Your shorturl is:</p>
-	<input type="text" id="shorturl_result" readonly />
-	<script src="popup.js"></script>
+
+	<section id="loading">
+		<img src="images/loading.gif" alt="Loading..." />
+		<p id="loading-status"></p>
+	</section>
+
+	<section id="result">
+		<p>Your shorturl is:</p>
+		<input type="text" id="shorturl-result" readonly />
+		<script src="popup.js"></script>
+	</section>
+
+	<section id="error">
+		<p id="user-info"></p>
+		<pre id="error-message"></pre>
+	</section>
+
 </body>
 </html>

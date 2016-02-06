@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"permissions": ["activeTab", "storage"],
+	"permissions": ["activeTab", "storage", "http://*/", "https://*/"],
 
 	"name": "earlsh - Chrome plugin",
 	"version": "0.1",
